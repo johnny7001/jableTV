@@ -11,7 +11,7 @@ source activate
 # API
 主網址 = http://127.0.0.1:3123  
 # 功能介紹
-- 加上番號可從資料庫取得影片資訊  
+- 輸入video number 查詢番號資訊
 ```
 url = http://127.0.0.1:3123/videos/<number>     
 ex: http://127.0.0.1:3123/videos/pppe-052  
@@ -29,7 +29,12 @@ ex: http://127.0.0.1:3123/videos/pppe-052
     "url": "https://jable.tv/videos/pppe-052/"
 }
 ```
-- 輸入video status 可獲取該代碼所有影片的url (代碼0: 0 尚未下載,  1 正在下載, 2 下載完成)
+- 輸入video status 可獲取該代碼所有影片的url (代碼0: 0 尚未下載,  1 正在下載, 2 下載完成, 3 下載失敗)
 ```
 url = http://127.0.0.1:3123/status/<status>
+ex: http://127.0.0.1:3123/status/3
+```  
+```
+['https://jable.tv/videos/ssis-070/', 'https://jable.tv/videos/jul-966/', 'https://jable.tv/videos/pred-162/',
+'https://jable.tv/videos/pfes-029/', 'https://jable.tv/videos/ipx-872/', 'https://jable.tv/videos/miaa-019-c/']
 ```
